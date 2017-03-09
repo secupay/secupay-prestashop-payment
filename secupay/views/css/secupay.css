@@ -1,0 +1,70 @@
+p.payment_module a.secupay_cc:after,
+p.payment_module a.secupay_invoice:after,
+p.payment_module a.secupay_prepay:after,
+p.payment_module a.secupay_debit:after {
+    display: block;
+    position: absolute;
+    right: 15px;
+    margin-top: -11px;
+    top: 50%;
+    font-family: "FontAwesome";
+    font-size: 25px;
+    height: 22px;
+    width: 14px;
+    color: #777777;
+}
+
+.iframe_wrapper{
+    height:750px;
+    margin-top:50px;
+    text-align:center;
+}
+#iframe_wrapper_center{
+    border:0px solid #212121;
+    margin: 0 auto;
+    width: 549px;
+    height: 650px;
+}
+div.wrap_shop div.iframe_wrapper {
+    z-index: 1000;
+    position: absolute;
+}
+#spiframe{
+    width:549px;
+    height:650px;
+}
+#fail_link a{
+    font-size:normal;
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
+}
+#fail_link{
+    background-color:#b55353;
+    text-align:center;
+}
+
+#secupay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: rgba(10, 10, 10, 0.5);
+    display: none;
+}
+
+#secupay main {
+    color: white;
+    width: 100%;
+    height: 750px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow-y: auto;
+    -webkit-box-shadow: 0 5px 20px 3px rgba(0,0,0,0.0);
+    -moz-box-shadow: 0 5px 20px 3px rgba(0,0,0,0.0);
+    box-shadow: 0 5px 20px 3px rgba(0,0,0,0.0);
+}

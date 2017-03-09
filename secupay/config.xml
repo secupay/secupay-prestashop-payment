@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>secupay</name>
+	<displayName><![CDATA[secupay AG]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Secupay - Easy Secure Payment - secupay AG is your reliable partner for online payment and payment processing in your online shop.]]></description>
+	<author><![CDATA[secupay AG]]></author>
+	<tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[Do you want to delete the module with all the details?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

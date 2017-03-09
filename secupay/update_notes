@@ -1,0 +1,20 @@
+    Pleas Update Manuel SQL come from modul < v. 0.1.2
+        ALTER TABLE `ps_secupay` CHANGE `date_add` `timestamp` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+        ALTER TABLE `ps_secupay` CHANGE `request` `req_data` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL; 
+        ALTER TABLE `ps_secupay` CHANGE `response` `ret_data` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;  
+        
+        ALTER TABLE `"._DB_PREFIX_."secupay` ADD `unique_id` varchar(255) default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` ADD `rank` int(10) UNSIGNED default 0;
+        ALTER TABLE `"._DB_PREFIX_."secupay` ADD `status` varchar(255) default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `trans_id` int(10) UNSIGNED default 0;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `msg` varchar(255) default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `amount` varchar(255) default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `updated` datetime default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `created` datetime default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `v_status` varchar(20) default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `v_send` varchar(1) default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `track_number` varchar(255) default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `track_send` varchar(1) default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `carrier_code` varchar(32) default NULL;
+        ALTER TABLE `"._DB_PREFIX_."secupay` add `searchcode` varchar(255) default NULL;
+    
