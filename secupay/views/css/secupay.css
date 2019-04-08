@@ -1,3 +1,14 @@
+/*
+ * secupay Payment Module
+ * @author    secupay AG
+ * @copyright 2019, secupay AG
+ * @license   LICENSE.txt
+ * @category  Payment
+ *
+ * Description:
+ *  Prestashop Plugin for integration of secupay AG payment services
+ */
+
 p.payment_module a.secupay_cc:after,
 p.payment_module a.secupay_invoice:after,
 p.payment_module a.secupay_prepay:after,
@@ -14,34 +25,40 @@ p.payment_module a.secupay_debit:after {
     color: #777777;
 }
 
-.iframe_wrapper{
-    height:750px;
-    margin-top:50px;
-    text-align:center;
+.iframe_wrapper {
+    height: 750px;
+    margin-top: 50px;
+    text-align: center;
 }
-#iframe_wrapper_center{
-    border:0px solid #212121;
+
+#iframe_wrapper_center {
+    border: 0 solid #212121;
     margin: 0 auto;
     width: 549px;
     height: 650px;
 }
+
 div.wrap_shop div.iframe_wrapper {
     z-index: 1000;
     position: absolute;
 }
-#spiframe{
-    width:549px;
-    height:650px;
+
+#spiframe {
+    width: 549px;
+    height: 650px;
 }
-#fail_link a{
-    font-size:normal;
-    text-decoration:none;
-    font-weight:bold;
-    color:white;
+
+/*noinspection ALL*/
+#fail_link a {
+    font-size: normal;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
-#fail_link{
-    background-color:#b55353;
-    text-align:center;
+
+#fail_link {
+    background-color: #b55353;
+    text-align: center;
 }
 
 #secupay {
@@ -64,7 +81,7 @@ div.wrap_shop div.iframe_wrapper {
     top: 50%;
     left: 50%;
     overflow-y: auto;
-    -webkit-box-shadow: 0 5px 20px 3px rgba(0,0,0,0.0);
-    -moz-box-shadow: 0 5px 20px 3px rgba(0,0,0,0.0);
-    box-shadow: 0 5px 20px 3px rgba(0,0,0,0.0);
+    -webkit-box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.0);
+    -moz-box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.0);
+    box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.0);
 }

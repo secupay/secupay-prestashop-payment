@@ -17,6 +17,7 @@
  *
  * NOTICE OF LICENSE
  *
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -29,9 +30,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *}
-<span class="btn-group-action">
-    <span class="btn-group">
-      <p class="btn btn-default _blank">{l s='Auto Report' mod='secupay'}</p>
-    </span>
-</span>
-
+<section id="secupay-payment-options">
+    <img
+            src="{$mod_lang.logo|escape:'htmlall':'UTF-8'}" alt="205x75.png" width="205" height="75"
+            style="float: right; margin-top: -50px"
+    />
+    <p>{$mod_lang.desc|escape:'htmlall':'UTF-8'}
+        <a
+                target="_blank"
+                href="{$mod_lang.link|escape:'htmlall':'UTF-8'}"
+        >{l s='More' mod='secupay'}</a>
+    </p>
+</section>

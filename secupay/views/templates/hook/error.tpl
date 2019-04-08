@@ -29,6 +29,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *}
- <div class="alert alert-warning" role="alert">
+<div class="alert alert-warning" role="alert">
     <strong>{$status|escape:'htmlall':'UTF-8'}</strong> - {$msg|escape:'htmlall':'UTF-8'}
 </div>

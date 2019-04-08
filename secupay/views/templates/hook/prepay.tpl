@@ -29,17 +29,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *}
- <p>{l s='Your selected payment method' mod='secupay'}: {l s='secupay.prepay' mod='secupay'}<br>
-{l s='Shipping after payment.</p>' mod='secupay'}
-<p>{l s='The invoice amount is to' mod='secupay'} {$recipient_legal|escape:'htmlall':'UTF-8'} {l s='worn' mod='secupay'}.<br>
-<strong>{l s='A payment with discharging effect can only be to the following account' mod='secupay'}:</strong></p>
-<p><table border="0" width="100%">
-<tr>
-<td width="80%">
-{l s='receiver' mod='secupay'}: {$accountowner|escape:'htmlall':'UTF-8'}<br>
-{l s='IBAN' mod='secupay'}: {$iban|escape:'htmlall':'UTF-8'}, {l s='BIC' mod='secupay'}: {$bic|escape:'htmlall':'UTF-8'}<br>
-{l s='Bank' mod='secupay'}: {$bankname|escape:'htmlall':'UTF-8'}<br>
-{l s='Usage' mod='secupay'}: {$purpose|escape:'htmlall':'UTF-8'}<br>
-</td>
-</tr>
+<p>{l s='Your selected payment method' mod='secupay'}: {l s='secupay.prepay' mod='secupay'}
+    <br>
+    {l s='Shipping after payment.</p>' mod='secupay'}
+<p>{l s='The invoice amount is to' mod='secupay'} {$recipient_legal|escape:'htmlall':'UTF-8'} {l s='worn' mod='secupay'}
+    .<br>
+    <strong>{l s='A payment with discharging effect can only be to the following account' mod='secupay'}:</strong>
+</p>
+<p>
+<table border="0" width="100%">
+    <tr>
+        <td width="80%">
+            {l s='receiver' mod='secupay'}: {$accountowner|escape:'htmlall':'UTF-8'}
+            <br>
+            {l s='IBAN' mod='secupay'}: {$iban|escape:'htmlall':'UTF-8'}, {l s='BIC' mod='secupay'}
+                                          : {$bic|escape:'htmlall':'UTF-8'}
+            <br>
+            {l s='Bank' mod='secupay'}: {$bankname|escape:'htmlall':'UTF-8'}
+            <br>
+            {l s='Usage' mod='secupay'}: {$purpose|escape:'htmlall':'UTF-8'}
+            <br>
+        </td>
+    </tr>
 </table></p>

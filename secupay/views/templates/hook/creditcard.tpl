@@ -29,4 +29,5 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *}
- <p>{l s='Your selected payment method' mod='secupay'}: {l s='secupay.creditcard' mod='secupay'}<br>
+<p>{l s='Your selected payment method' mod='secupay'}: {l s='secupay.creditcard' mod='secupay'}
+    <br>

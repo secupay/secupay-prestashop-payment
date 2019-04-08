@@ -29,21 +29,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *}
- <p>{l s='Your selected payment method' mod='secupay'}: {l s='secupay.invoice' mod='secupay'}<br>
-{l s='Payable within 10 days after receipt of goods.</p>' mod='secupay'}
-<p>{l s='The invoice amount is to' mod='secupay'} {$recipient_legal|escape:'htmlall':'UTF-8'} {l s='worn' mod='secupay'}.<br>
-<strong>{l s='A payment with discharging effect can only be to the following account' mod='secupay'}:</strong></p>
-<p><table border="0" width="100%">
-<tr>
-<td width="80%">
-{l s='receiver' mod='secupay'}: {$accountowner|escape:'htmlall':'UTF-8'}<br>
-{l s='IBAN' mod='secupay'}: {$iban|escape:'htmlall':'UTF-8'}, {l s='BIC' mod='secupay'}: {$bic|escape:'htmlall':'UTF-8'}<br>
-{l s='Bank' mod='secupay'}: {$bankname|escape:'htmlall':'UTF-8'}<br>
-{l s='Usage' mod='secupay'}: {$purpose|escape:'htmlall':'UTF-8'}<br>
-</td>
-<td align="right" width="20%">
-<img src="{$qr_link|escape:'htmlall':'UTF-8'}" width="56" height="56">
-</td>
-</tr>
+<p>{l s='Your selected payment method' mod='secupay'}: {l s='secupay.invoice' mod='secupay'}
+    <br>
+    {l s='Payable within 10 days after receipt of goods.</p>' mod='secupay'}
+<p>{l s='The invoice amount is to' mod='secupay'} {$recipient_legal|escape:'htmlall':'UTF-8'} {l s='worn' mod='secupay'}
+    .<br>
+    <strong>{l s='A payment with discharging effect can only be to the following account' mod='secupay'}:</strong>
+</p>
+<p>
+<table border="0" width="100%">
+    <tr>
+        <td width="80%">
+            {l s='receiver' mod='secupay'}: {$accountowner|escape:'htmlall':'UTF-8'}
+            <br>
+            {l s='IBAN' mod='secupay'}: {$iban|escape:'htmlall':'UTF-8'}, {l s='BIC' mod='secupay'}
+                                          : {$bic|escape:'htmlall':'UTF-8'}
+            <br>
+            {l s='Bank' mod='secupay'}: {$bankname|escape:'htmlall':'UTF-8'}
+            <br>
+            {l s='Usage' mod='secupay'}: {$purpose|escape:'htmlall':'UTF-8'}
+            <br>
+        </td>
+        <td align="right" width="20%">
+            <img src="{$qr_link|escape:'htmlall':'UTF-8'}" width="56" height="56">
+        </td>
+    </tr>
 </table></p>
-<p>{l s='To conveniently pay this bill online, you can scan the QR code with an Internet-enabled phone or use this URL' mod='secupay'}: <a href="{$payment_link|escape:'htmlall':'UTF-8'}">{$payment_link|escape:'htmlall':'UTF-8'}</a></p>
+<p>{l s='To conveniently pay this bill online, you can scan the QR code with an Internet-enabled phone or use this URL' mod='secupay'}
+    :
+    <a href="{$payment_link|escape:'htmlall':'UTF-8'}">{$payment_link|escape:'htmlall':'UTF-8'}</a>
+</p>

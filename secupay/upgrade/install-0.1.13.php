@@ -17,9 +17,11 @@ if (!defined('_PS_VERSION_')) {
 }
 
 /**
- * @return bool
+ * @param $module
+ *
+ * @return mixed
  */
-function upgrade_module_0_1_10()
+function upgrade_module_0_1_13($module)
 {
-    return true;
+    return $module->unregisterHook('paymentReturn');
 }

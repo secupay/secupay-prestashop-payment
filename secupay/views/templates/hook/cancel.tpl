@@ -32,8 +32,9 @@
 
 <h2>{l s='Your order has been canceled' mod='secupay'}</h2>
 <p>
-{l s='The payment was not carried out.' mod='secupay'} <br>
-{l s='Your order has been canceled.' mod='secupay'}
+    {l s='The payment was not carried out.' mod='secupay'}
+    <br>
+    {l s='Your order has been canceled.' mod='secupay'}
 </p>
 
 <p>{l s='For questions, please contact our Support.' mod='secupay'}</p>

@@ -40,6 +40,9 @@
 
 <div id="secupay">
     <main>
-        <iframe id="frame" frameborder="0" scrolling="auto" width="100%" height="550px" src="{$iframesrc|escape:'htmlall':'UTF-8'}"></iframe>
+        <iframe
+                id="frame" frameborder="0" scrolling="auto" width="100%" height="550px"
+                src="{$iframesrc|escape:'htmlall':'UTF-8'}"
+        ></iframe>
     </main>
 </div>

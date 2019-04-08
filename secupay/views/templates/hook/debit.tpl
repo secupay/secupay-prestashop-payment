@@ -29,4 +29,4 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *}
- {l s='Your selected payment method' mod='secupay'}: {l s='secupay.debit' mod='secupay'}
+{l s='Your selected payment method' mod='secupay'}: {l s='secupay.debit' mod='secupay'}

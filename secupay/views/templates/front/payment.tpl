@@ -29,8 +29,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *}
+
 {capture name=path}
-    {l s='secupay payment' mod='secupay'}
+    <a
+            href="{$link->getPageLink('order', true, NULL, "step=3")|escape:'html':'UTF-8'}"
+            title="{l s='Go back to the checkout' mod='secupay'}"
+    >{l s='Checkout' mod='secupay'}</a>
+    <span class="navigation-pipe">{$navigationPipe|escape:'html':'UTF-8'}</span>{l s='secupay payment' mod='secupay'}
 {/capture}
 
 <h1 class="page-heading">
@@ -38,61 +43,23 @@
 </h1>
 
 {assign var='current_step' value='payment'}
-
 {include file="$tpl_dir./order-steps.tpl"}
+
+<h2 class="page-subheading">{l s='secupay payment' mod='secupay'}</h2>
+{if $error_tpl}
+    {include file=$error_tpl hideOrderSteps=true}
+{/if}
 {if $nb_products <= 0}
-<p class="alert alert-warning">
-    {l s='Your shopping cart is empty.' mod='secupay'}
-</p>
-{else}
-<form action="{$link->getModuleLink('secupay', 'validation', ['pt' => $pt], true)|escape:'html':'UTF-8'}" method="post">
-    <div class="box cheque-box">
-        <h3 class="page-subheading">
-            {l s='secupay payment' mod='secupay'}
-        </h3>
-        <p class="cheque-indent">
-            <strong class="dark">
-                 {l s='You have chosen to pay with secupay' mod='secupay'}
-                {if $pt=='creditcard'}
-                    {l s='credit card' mod='secupay'}
-                {/if}
-                {if $pt=='invoice'}
-                    {l s='invoice' mod='secupay'}
-                {/if}
-                {if $pt=='prepay'}
-                    {l s='prepay' mod='secupay'}
-                {/if}
-                {if $pt=='debit'}
-                    {l s='debit' mod='secupay'}
-                {/if}. {l s='Here is a short summary of your order' mod='secupay'}:
-            </strong>
-        </p>
-        <p>
-            - {l s='The total amount of your order is' mod='secupay'}
-            <span id="amount" class="price">{displayPrice price=$total_amount}</span>
-            {if $use_taxes == 1}
-                {l s='(tax incl.)' mod='secupay'}
-            {/if}
-        </p>
-        
-        <p>
-            - {l s='secupay payment information will be displayed on the next page.' mod='secupay'}
-            <br>
-            - {l s='Please confirm your order by clicking "I confirm my order."' mod='secupay'}
-        </p>
-    </div>
-    <p class="cart_navigation clearfix" id="cart_navigation">
-        <a
-                class="button-exclusive btn btn-default"
-                href="{$link->getPageLink('order', true, NULL, "step=3")|escape:'html':'UTF-8'}">
-            <i class="icon-chevron-left"></i>{l s='Other payment methods' mod='secupay'}
-        </a>
-        <button
-                class="button btn btn-default button-medium"
-                type="submit">
-            <span>{l s='I confirm my order' mod='secupay'}<i class="icon-chevron-right right"></i></span>
-        </button>
+    <p class="alert alert-warning">
+        {l s='Your shopping cart is empty.' mod='secupay'}
     </p>
-  
-</form>
+{else}
+    <div id="secupay">
+        <main>
+            <iframe
+                    id="frame" frameborder="0" scrolling="auto" width="100%" height="550px"
+                    src="{$iframesrc|escape:'htmlall':'UTF-8'}"
+            ></iframe>
+        </main>
+    </div>
 {/if}

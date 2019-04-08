@@ -29,9 +29,4 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *}
-<span class="btn-group-action">
-    <span class="btn-group">
-      <p class="btn btn-default _blank">{l s='Auto Report' mod='secupay'}</p>
-    </span>
-</span>
-
+{l s='Your selected payment method' mod='secupay'}: {l s='secupay.sofort' mod='secupay'}

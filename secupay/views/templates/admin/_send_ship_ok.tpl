@@ -29,9 +29,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *}
- 
- <span class="btn-group-action">
+
+<span class="btn-group-action">
     <span class="btn-group">
-              <p class="btn btn-default _blank" >{l s='Posted' mod='secupay'}</p>
+              <p class="btn btn-default _blank">{l s='Posted' mod='secupay'}</p>
         </span>
 </span>
